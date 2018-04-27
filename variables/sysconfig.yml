@@ -36,3 +36,7 @@ mac_defaults:
     value: 0
   - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerDrag
     value: 1
+
+  # Prevent creation of .DS_Store files
+  - key: com.apple.desktopservices.DSDontWriteNetworkStores
+    value: true
