@@ -1,0 +1,43 @@
+- name: "Ensure necessary directories exists"
+  file:
+    path: "{{ item }}"
+    state: directory
+  with_items:
+    - "{{ dot_dir }}"
+    - "{{ rc_d_dir }}"
+
+- name: Install rc files into '{{ rc_d_dir }}'
+  template:
+    src: "{{ item }}.j2"
+    dest: "{{ rc_d_dir }}/{{ item }}"
+  with_items:
+    - "aliases"
+    - "functions"
+    - "paths"
+
+- name: Install main '{{ rc_script }}' script
+  template:
+    src: rc.sh.j2
+    dest: "{{ rc_script }}"
+    mode: 0755
+
+- name: "Append {{ login_shell }} to the allowed shells"
+  become: yes
+  lineinfile:
+    path: /etc/shells
+    line: "{{ login_shell }}"
+
+- name: Check current default shell
+  command: echo $SHELL
+  register: current_shell
+
+- name: Set default shell
+  command: "chsh -s {{ login_shell }} $USER"
+  when: "current_shell.stdout != login_shell"
+
+- name: Link {{ rc_script }} file to {{ shell_rc }}
+  file:
+    src: "{{ rc_script }}"
+    dest: "{{ shell_rc }}"
+    state: link
+    mode: 0755

@@ -1,0 +1,12 @@
+- name: Install zipped mac apps
+  unarchive:
+    src: "{{ item.path }}"
+    dest: "{{ applications_dir }}"
+  with_items: "{{ mac_apps }}"
+  when: "item.path | search('.zip')"
+
+- name: Install pkg mac apps
+  shell: "installer -pkg \"{{ item.path }}\" -target /"
+  become: yes
+  with_items: "{{ mac_apps }}"
+  when: "item.path | search('.pkg')"

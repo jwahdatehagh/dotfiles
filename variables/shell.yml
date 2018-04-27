@@ -1,0 +1,2 @@
+login_shell: /usr/local/bin/zsh
+shell_rc: $HOME/.zshrc

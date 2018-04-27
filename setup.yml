@@ -1,0 +1,22 @@
+---
+- name: Install dotfiles using ansible
+  hosts: localhost
+  connection: local
+  vars_files:
+    - variables/aliases.yml
+    - variables/paths.yml
+    - variables/shell.yml
+    - variables/software.yml
+  vars_prompt:
+    - name: ansible_become_pass
+      prompt: Sudo password needed for some tasks
+      private: yes
+  roles:
+    - role: homebrew
+      tags: [software, homebrew]
+    - role: mac-apps
+      tags: [software, mac-apps]
+    - role: geerlingguy.mas
+      tags: [software, mac-apps]
+    - role: rc
+      tags: [rc]

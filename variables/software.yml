@@ -1,0 +1,45 @@
+---
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+  - osx-cross/avr
+
+homebrew_apps:
+  - zsh
+  - htop
+  - wget
+  - pv
+  - nmap
+  - mariadb
+  - postgresql
+  - nginx
+  - ffmpeg
+  - youtube-dl
+  - avr-binutils
+  - avr-gcc
+  - avrdude
+
+homebrew_cask_apps:
+  - iterm2
+  - firefox-developer-edition
+  - eloston-chromium  # ungoogled
+  - sequel-pro
+  - postico
+  - sublime-text
+  - vagrant
+  - the-unarchiver
+  - spectacle
+  - gimp
+
+# Mac app store apps
+mas_installed_apps:
+  - { id: 803453959, name: "Slack" }
+  - { id: 747648890, name: "Telegram" }
+  - { id: 1179623856, name: "Pastebot" }
+  - { id: 732710998, name: "Enpass" }
+  - { id: 960276676, name: "Taurine" }
+
+# Locally copied mac apps
+mac_apps:
+  - path: /Volumes/nifty/Cloud/_shared/Mac Apps/sketch-43.2-39069.zip
+  - path: /Volumes/nifty/Cloud/_shared/Mac Apps/Radio_Silence_2.1.pkg

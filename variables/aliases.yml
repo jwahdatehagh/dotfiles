@@ -1,0 +1,3 @@
+aliases:
+  puf: "./vendor/bin/phpunit --filter "
+  myip: "curl https://api.ipify.org"
