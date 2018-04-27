@@ -1,48 +1,49 @@
 # Sources for homebrew apps
 homebrew_taps:
-  - homebrew/core
   - caskroom/cask
   - caskroom/versions
+  - homebrew/core
   - osx-cross/avr
 
 # Apps installed through Homebrew
 homebrew_apps:
-  - zsh
-  - htop
-  - wget
-  - pv
-  - nmap
-  - mariadb
-  - postgresql
-  - nginx
-  - dnsmasq
-  - php
-  - composer
-  - ffmpeg
-  - youtube-dl
   - avr-binutils
   - avr-gcc
   - avrdude
+  - composer
+  - dnsmasq
+  - ffmpeg
+  - htop
+  - mariadb
+  - nginx
+  - nmap
+  - php
+  - postgresql
+  - pv
+  - wget
+  - youtube-dl
+  - zsh
 
 # Apps installed through Homebrew Cask
 homebrew_cask_apps:
-  - iterm2
-  - firefox-developer-edition
   - eloston-chromium  # ungoogled
-  - sequel-pro
-  - postico
-  - sublime-text
-  - vagrant
-  - the-unarchiver
-  - spectacle
+  - firefox-developer-edition
   - gimp
+  - iterm2
+  - postico
+  - postman
+  - sequel-pro
+  - spectacle
+  - sublime-text
+  - the-unarchiver
+  - vagrant
 
 # Apps installed through Mac app store
 mas_installed_apps:
-  - { id: 803453959, name: "Slack" }
-  - { id: 747648890, name: "Telegram" }
   - { id: 1179623856, name: "Pastebot" }
   - { id: 732710998, name: "Enpass" }
+  - { id: 747648890, name: "Telegram" }
+  - { id: 803453959, name: "Slack" }
   - { id: 960276676, name: "Taurine" }
 
 # Locally copied mac apps
@@ -56,5 +57,5 @@ mac_apps:
 composer_packages:
   - "laravel/installer"
   - "laravel/valet"
-  - "squizlabs/php_codesniffer"
   - "phpunit/phpunit"
+  - "squizlabs/php_codesniffer"
