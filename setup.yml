@@ -19,6 +19,8 @@
       tags: [software, mac-apps]
     - role: geerlingguy.mas
       tags: [software, mac-apps]
+    - role: composer
+      tags: [software, composer]
     - role: rc
       tags: [rc]
     - role: conf

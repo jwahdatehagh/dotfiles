@@ -15,6 +15,8 @@ homebrew_apps:
   - mariadb
   - postgresql
   - nginx
+  - php
+  - composer
   - ffmpeg
   - youtube-dl
   - avr-binutils
@@ -48,3 +50,10 @@ mac_apps:
     creates: Sketch.app
   - path: /Volumes/nifty/Cloud/_shared/Mac Apps/Radio_Silence_2.1.pkg
     creates: Radio Silence.app
+
+# Global composer packages
+composer_packages:
+  - "laravel/installer"
+  - "laravel/valet"
+  - "squizlabs/php_codesniffer"
+  - "phpunit/phpunit"
