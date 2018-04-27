@@ -32,5 +32,7 @@ mac_defaults:
     value: 0
   - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerVertSwipeGesture
     value: 0
+  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerTapGesture
+    value: 0
   - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerDrag
     value: 1
