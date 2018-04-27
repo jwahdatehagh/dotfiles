@@ -1,0 +1,36 @@
+mac_defaults:  
+  # Finder settings
+  - key: com.apple.finder._FXSortFoldersFirst
+    value: 1
+  - key: com.apple.finder.ShowExternalHardDrivesOnDesktop
+    value: 0
+  - key: com.apple.finder.ShowHardDrivesOnDesktop
+    value: 0
+  - key: com.apple.finder.ShowMountedServersOnDesktop
+    value: 0
+  - key: com.apple.finder.ShowRemovableMediaOnDesktop
+    value: 0
+  - key: com.apple.finder.NewWindowTarget
+    value: '"PfHm"'
+  - key: com.apple.finder.NewWindowTargetPath
+    value: '"file:///Users/jsphpl/"'
+
+  # Disable Siri
+  - key: com.apple.siricore.fides.DES Lottery Win Override Enabled
+    value: 0
+  - key: com.apple.siricore.fides.DES Recording Enabled
+    value: 0
+  - key: com.apple.Siri.StatusMenuVisible
+    value: 0
+
+  # Trackpad settings
+  - key: com.apple.trackpad.scaling
+    value: 1
+  - key: com.apple.AppleMultitouchTrackpad.Clicking
+    value: 1
+  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerHorizSwipeGesture
+    value: 0
+  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerVertSwipeGesture
+    value: 0
+  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerDrag
+    value: 1

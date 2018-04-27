@@ -1,0 +1,4 @@
+- name: Install global git config
+  template:
+    src: gitconfig.j2
+    dest: "$HOME/.gitconfig"

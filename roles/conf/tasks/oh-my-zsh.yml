@@ -1,0 +1,16 @@
+- name: Ensure {{ oh_my_zsh_dir }} exists
+  file:
+    path: "{{ oh_my_zsh_dir }}"
+    state: directory
+
+- name: Clone oh-my-zsh repository into {{ oh_my_zsh_dir }}
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    clone: yes
+    dest: "{{ oh_my_zsh_dir }}"
+    depth: 1
+
+- name: Install oh-my-zsh config into '{{ rc_d_dir }}'
+  template:
+    src: "oh-my-zsh.j2"
+    dest: "{{ rc_d_dir }}/oh-my-zsh"

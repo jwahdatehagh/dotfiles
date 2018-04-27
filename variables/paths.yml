@@ -1,2 +1,3 @@
 extra_paths:
-  - '$HOME/bin'
+  - $HOME/bin
+  - /usr/local/bin

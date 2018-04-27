@@ -2,11 +2,14 @@
   unarchive:
     src: "{{ item.path }}"
     dest: "{{ applications_dir }}"
+    creates: "{{ applications_dir }}/{{ item.creates | default('missing') }}"
   with_items: "{{ mac_apps }}"
   when: "item.path | search('.zip')"
 
 - name: Install pkg mac apps
-  shell: "installer -pkg \"{{ item.path }}\" -target /"
+  command: "installer -pkg \"{{ item.path }}\" -target /"
+  args:
+    creates: "{{ applications_dir }}/{{ item.creates | default(missing) }}"
   become: yes
   with_items: "{{ mac_apps }}"
   when: "item.path | search('.pkg')"

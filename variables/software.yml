@@ -1,9 +1,11 @@
----
+# Sources for homebrew apps
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
+  - caskroom/versions
   - osx-cross/avr
 
+# Apps installed through Homebrew
 homebrew_apps:
   - zsh
   - htop
@@ -19,6 +21,7 @@ homebrew_apps:
   - avr-gcc
   - avrdude
 
+# Apps installed through Homebrew Cask
 homebrew_cask_apps:
   - iterm2
   - firefox-developer-edition
@@ -31,7 +34,7 @@ homebrew_cask_apps:
   - spectacle
   - gimp
 
-# Mac app store apps
+# Apps installed through Mac app store
 mas_installed_apps:
   - { id: 803453959, name: "Slack" }
   - { id: 747648890, name: "Telegram" }
@@ -42,4 +45,6 @@ mas_installed_apps:
 # Locally copied mac apps
 mac_apps:
   - path: /Volumes/nifty/Cloud/_shared/Mac Apps/sketch-43.2-39069.zip
+    creates: Sketch.app
   - path: /Volumes/nifty/Cloud/_shared/Mac Apps/Radio_Silence_2.1.pkg
+    creates: Radio Silence.app

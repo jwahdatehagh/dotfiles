@@ -1,2 +1,2 @@
 # {{ ansible_managed }}
-export PATH=$PATH:{{ extra_paths | join(':') }}
+export PATH={{ extra_paths | join(':') }}:$PATH
