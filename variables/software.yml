@@ -15,6 +15,7 @@ homebrew_apps:
   - mariadb
   - postgresql
   - nginx
+  - dnsmasq
   - php
   - composer
   - ffmpeg

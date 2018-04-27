@@ -1,5 +1,5 @@
 - name: Update homebrew
-  command: brew update --force
+  command: brew update
 
 - name: Ensure configured homebrew taps are installed
   homebrew_tap:
