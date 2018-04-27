@@ -1,0 +1,11 @@
+- name: Ensure {{ nvm_dir }} exists
+  file:
+    path: "{{ nvm_dir }}"
+    state: directory
+
+- name: Clone nvm repository into {{ nvm_dir }}
+  git:
+    repo: https://github.com/creationix/nvm
+    clone: yes
+    dest: "{{ nvm_dir }}"
+    depth: 1

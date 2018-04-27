@@ -13,11 +13,15 @@ homebrew_apps:
   - composer
   - dnsmasq
   - ffmpeg
+  - heroku
   - htop
+  - imagemagick
   - mariadb
   - nginx
   - nmap
+  - nvm
   - php
+  - pkg-config
   - postgresql
   - pv
   - wget
@@ -26,6 +30,7 @@ homebrew_apps:
 
 # Apps installed through Homebrew Cask
 homebrew_cask_apps:
+  - boostnote
   - eloston-chromium  # ungoogled
   - firefox-developer-edition
   - gimp

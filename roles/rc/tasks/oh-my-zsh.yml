@@ -9,8 +9,3 @@
     clone: yes
     dest: "{{ oh_my_zsh_dir }}"
     depth: 1
-
-- name: Install oh-my-zsh config into '{{ rc_d_dir }}'
-  template:
-    src: "oh-my-zsh.j2"
-    dest: "{{ rc_d_dir }}/oh-my-zsh"

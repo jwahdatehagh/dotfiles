@@ -1,42 +1,67 @@
 mac_defaults:  
   # Finder settings
-  - key: com.apple.finder._FXSortFoldersFirst
+  - domain: com.apple.finder
+    key: _FXSortFoldersFirst
     value: 1
-  - key: com.apple.finder.ShowExternalHardDrivesOnDesktop
+  - domain: com.apple.finder
+    key: ShowExternalHardDrivesOnDesktop
     value: 0
-  - key: com.apple.finder.ShowHardDrivesOnDesktop
+  - domain: com.apple.finder
+    key: ShowHardDrivesOnDesktop
     value: 0
-  - key: com.apple.finder.ShowMountedServersOnDesktop
+  - domain: com.apple.finder
+    key: ShowMountedServersOnDesktop
     value: 0
-  - key: com.apple.finder.ShowRemovableMediaOnDesktop
+  - domain: com.apple.finder
+    key: ShowRemovableMediaOnDesktop
     value: 0
-  - key: com.apple.finder.NewWindowTarget
+  - domain: com.apple.finder
+    key: NewWindowTarget
     value: '"PfHm"'
-  - key: com.apple.finder.NewWindowTargetPath
+  - domain: com.apple.finder
+    key: NewWindowTargetPath
     value: '"file:///Users/jsphpl/"'
 
   # Disable Siri
-  - key: com.apple.siricore.fides.DES Lottery Win Override Enabled
+  - domain: com.apple.siricore.fides
+    key: DES Lottery Win Override Enabled
     value: 0
-  - key: com.apple.siricore.fides.DES Recording Enabled
+  - domain: com.apple.siricore.fides
+    key: DES Recording Enabled
     value: 0
-  - key: com.apple.Siri.StatusMenuVisible
+  - domain: com.apple.Siri
+    key: StatusMenuVisible
     value: 0
 
   # Trackpad settings
-  - key: com.apple.trackpad.scaling
+  - domain: com.apple.trackpad
+    key: scaling
     value: 1
-  - key: com.apple.AppleMultitouchTrackpad.Clicking
+  - domain: com.apple.AppleMultitouchTrackpad
+    key: Clicking
     value: 1
-  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerHorizSwipeGesture
+  - domain: com.apple.AppleMultitouchTrackpad
+    key: TrackpadThreeFingerHorizSwipeGesture
     value: 0
-  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerVertSwipeGesture
+  - domain: com.apple.AppleMultitouchTrackpad
+    key: TrackpadThreeFingerVertSwipeGesture
     value: 0
-  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerTapGesture
+  - domain: com.apple.AppleMultitouchTrackpad
+    key: TrackpadThreeFingerTapGesture
     value: 0
-  - key: com.apple.AppleMultitouchTrackpad.TrackpadThreeFingerDrag
+  - domain: com.apple.AppleMultitouchTrackpad
+    key: TrackpadThreeFingerDrag
     value: 1
 
   # Prevent creation of .DS_Store files
-  - key: com.apple.desktopservices.DSDontWriteNetworkStores
+  - domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
     value: true
+
+  # Dock
+  - domain: com.apple.dock
+    key: autohide
+    value: 1
+  - domain: com.apple.dock
+    key: orientation
+    value: left

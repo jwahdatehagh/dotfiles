@@ -23,5 +23,5 @@
       tags: [software, composer]
     - role: rc
       tags: [rc]
-    - role: conf
-      tags: [conf]
+    - role: sysconfig
+      tags: [sysconfig]
