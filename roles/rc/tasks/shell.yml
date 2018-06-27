@@ -12,10 +12,11 @@
     dest: "{{ rc_d_dir }}/{{ item }}"
   with_items:
     - aliases
+    - android
     - functions
     - paths
-    - nvm
     - oh-my-zsh
+    - locale
 
 - name: Install main '{{ rc_script }}' script
   template:

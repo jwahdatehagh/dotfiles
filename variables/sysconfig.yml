@@ -1,4 +1,4 @@
-mac_defaults:  
+mac_defaults:
   # Finder settings
   - domain: com.apple.finder
     key: _FXSortFoldersFirst
@@ -33,10 +33,18 @@ mac_defaults:
     key: StatusMenuVisible
     value: 0
 
+  # Keyboard repeat rate and delay
+  - domain: -g
+    key: InitialKeyRepeat
+    value: -int 15
+  - domain: -g
+    key: KeyRepeat
+    value: -int 2
+
   # Trackpad settings
-  - domain: com.apple.trackpad
-    key: scaling
-    value: 1
+  - domain: -g
+    key: com.apple.trackpad.scaling
+    value: 2
   - domain: com.apple.AppleMultitouchTrackpad
     key: Clicking
     value: 1
@@ -53,7 +61,7 @@ mac_defaults:
     key: TrackpadThreeFingerDrag
     value: 1
 
-  # Prevent creation of .DS_Store files
+  # Prevent creation of .DS_Store files on network drives
   - domain: com.apple.desktopservices
     key: DSDontWriteNetworkStores
     value: true
@@ -65,3 +73,13 @@ mac_defaults:
   - domain: com.apple.dock
     key: orientation
     value: left
+
+  # Allow tab-navigation of dialog window actions
+  - domain: NSGlobalDomain
+    key: AppleKeyboardUIMode
+    value: 3
+
+  # Hide Pastebot Menubar and Dock icon
+  - domain: com.tapbots.Pastebot2Mac
+    key: UIVisibilityState
+    value: 10

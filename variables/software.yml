@@ -3,6 +3,7 @@ homebrew_taps:
   - caskroom/cask
   - caskroom/versions
   - homebrew/core
+  - jlhonora/lsusb
   - osx-cross/avr
 
 # Apps installed through Homebrew
@@ -13,35 +14,48 @@ homebrew_apps:
   - composer
   - dnsmasq
   - ffmpeg
+  - gradle
   - heroku
   - htop
   - imagemagick
+  - lsusb
   - mariadb
+  - mitmproxy
   - nginx
   - nmap
-  - nvm
   - php
   - pkg-config
   - postgresql
   - pv
+  - qrencode
+  - watchman
   - wget
+  - wp-cli
   - youtube-dl
   - zsh
 
 # Apps installed through Homebrew Cask
 homebrew_cask_apps:
+  - android-sdk
+  - arduino
   - boostnote
+  - devdocs
   - eloston-chromium  # ungoogled
   - firefox-developer-edition
   - gimp
   - iterm2
+  - java
+  - nextcloud
+  - openscad
+  - poedit
   - postico
-  - postman
-  - sequel-pro
+  - tableplus
   - spectacle
   - sublime-text
   - the-unarchiver
   - vagrant
+  - virtualbox
+  - vlc
 
 # Apps installed through Mac app store
 mas_installed_apps:
@@ -50,6 +64,7 @@ mas_installed_apps:
   - { id: 747648890, name: "Telegram" }
   - { id: 803453959, name: "Slack" }
   - { id: 960276676, name: "Taurine" }
+  - { id: 496437906, name: "Shush" }
 
 # Locally copied mac apps
 mac_apps:
@@ -60,7 +75,13 @@ mac_apps:
 
 # Global composer packages
 composer_packages:
-  - "laravel/installer"
-  - "laravel/valet"
-  - "phpunit/phpunit"
-  - "squizlabs/php_codesniffer"
+  - laravel/installer
+  - laravel/valet
+  - phpunit/phpunit
+  - squizlabs/php_codesniffer
+  - friendsofphp/php-cs-fixer
+
+# Global pip (python) packages
+pip_packages:
+  - pipenv
+  - ansible

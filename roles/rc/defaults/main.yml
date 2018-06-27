@@ -1,5 +1,3 @@
 dot_dir: '$HOME/.dot'
 rc_d_dir: '{{ dot_dir }}/dot.d'
 rc_script: '{{ dot_dir }}/dot.sh'
-
-nvm_dir: '$HOME/.nvm'

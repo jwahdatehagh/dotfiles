@@ -5,3 +5,8 @@
     global_command: yes
     arguments: "{{ item }}"
   with_items: "{{ composer_packages }}"
+
+- name: Set global composer configuration options
+  template:
+    src: config.json.j2
+    dest: $HOME/.composer/config.json
