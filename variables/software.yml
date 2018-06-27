@@ -3,53 +3,33 @@ homebrew_taps:
   - caskroom/cask
   - caskroom/versions
   - homebrew/core
-  - jlhonora/lsusb
-  - osx-cross/avr
 
 # Apps installed through Homebrew
 homebrew_apps:
-  - avr-binutils
-  - avr-gcc
-  - avrdude
   - composer
   - dnsmasq
-  - ffmpeg
-  - gradle
   - heroku
   - htop
   - imagemagick
-  - lsusb
   - mariadb
-  - mitmproxy
   - nginx
-  - nmap
   - php
   - pkg-config
   - postgresql
-  - pv
-  - qrencode
   - watchman
   - wget
   - wp-cli
-  - youtube-dl
   - zsh
 
 # Apps installed through Homebrew Cask
 homebrew_cask_apps:
-  - android-sdk
-  - arduino
   - boostnote
   - devdocs
   - eloston-chromium  # ungoogled
   - firefox-developer-edition
-  - gimp
   - iterm2
-  - java
-  - nextcloud
-  - openscad
   - poedit
   - postico
-  - tableplus  # in testing stage
   - spectacle
   - sequel-pro
   - sublime-text
@@ -57,22 +37,16 @@ homebrew_cask_apps:
   - vagrant
   - virtualbox
   - vlc
+  - visual-studio-code
 
 # Apps installed through Mac app store
 mas_installed_apps:
-  - { id: 1179623856, name: "Pastebot" }
   - { id: 732710998, name: "Enpass" }
   - { id: 747648890, name: "Telegram" }
   - { id: 803453959, name: "Slack" }
-  - { id: 960276676, name: "Taurine" }
-  - { id: 496437906, name: "Shush" }
 
 # Locally copied mac apps
-mac_apps:
-  - path: /Volumes/nifty/Cloud/_shared/Mac Apps/sketch-43.2-39069.zip
-    creates: Sketch.app
-  - path: /Volumes/nifty/Cloud/_shared/Mac Apps/Radio_Silence_2.1.pkg
-    creates: Radio Silence.app
+mac_apps: []
 
 # Global composer packages
 composer_packages:
