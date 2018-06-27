@@ -49,8 +49,9 @@ homebrew_cask_apps:
   - openscad
   - poedit
   - postico
-  - tableplus
+  - tableplus  # in testing stage
   - spectacle
+  - sequel-pro
   - sublime-text
   - the-unarchiver
   - vagrant
